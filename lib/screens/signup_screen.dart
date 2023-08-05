@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:hm_1/screens/search_screen.dart';
 import 'package:hm_1/widgets/customAppbar.dart';
 import 'package:hm_1/widgets/customButtonWidget.dart';
 import 'package:hm_1/widgets/customTextField.dart';
@@ -48,7 +49,7 @@ class signUpScreen extends StatelessWidget {
               CustomButtonElevated(bgColor: Colors.black,fgColor: Colors.white,
                       title: 'Continue',
                        onPressed: () => {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => signUpScreen()))},
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => searchScreen()))},
                    ),
                     SizedBox(height: 20),
                    Text("By Contunuing you agree to the \n terms of service & privicy policy", textAlign: TextAlign.center,style: 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hm_1/screens/home_screen.dart';
+import 'package:hm_1/screens/search_screen.dart';
 import 'package:hm_1/screens/signup_screen.dart';
 import 'package:hm_1/widgets/customAppbar.dart';
 import 'package:hm_1/widgets/customButtonWidget.dart';
@@ -29,7 +30,8 @@ class loginScreen extends StatelessWidget {
 
            CustomButtonElevated(bgColor: Colors.black,fgColor: Colors.white,title: 'Login',
                      onPressed: () => {
-                     null},
+                     Navigator.push(context, MaterialPageRoute(builder: (context) => searchScreen())),
+                     },
                  ),
 
                  SizedBox(height: 25,),
