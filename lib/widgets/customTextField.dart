@@ -13,10 +13,12 @@ class customTextField extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(10.0),
       child: Column(
+      
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(labe, 
-                       textAlign: TextAlign.left ,style:  TextStyle(fontSize: 20, color: Colors.black,fontWeight: FontWeight.bold)),
+                       textAlign: TextAlign.left ,style:  TextStyle(fontSize: 20, color: Colors.black,)),
+           SizedBox(height: 13,),
           TextFormField(
             maxLines: 1,
             
@@ -28,7 +30,8 @@ class customTextField extends StatelessWidget {
                       hintText: hint,
                       contentPadding: const EdgeInsets.all(15),
                       border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30))),
+                        borderSide: BorderSide(color: Color.fromARGB(255, 170, 166, 166)),
+                          borderRadius: BorderRadius.circular(15))),
                   
     ),
         ],
