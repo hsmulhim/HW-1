@@ -20,9 +20,11 @@ class customTextField extends StatelessWidget {
                        textAlign: TextAlign.left ,style:  TextStyle(fontSize: 20, color: Colors.black,)),
            SizedBox(height: 13,),
           TextFormField(
+            
             maxLines: 1,
             
                   decoration: InputDecoration(
+                    
                     suffixIcon:sfIcon ,
                     suffixIconColor: Colors.black,
                     prefixIcon:pfIcon ,

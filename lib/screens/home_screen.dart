@@ -1,8 +1,6 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:hm_1/screens/login_screen.dart';
 import 'package:hm_1/widgets/customButtonWidget.dart';
 import 'package:hm_1/widgets/imageWidget.dart';
