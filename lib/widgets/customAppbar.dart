@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget{
    CustomAppBar({super.key, required this.title});
