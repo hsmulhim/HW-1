@@ -9,7 +9,7 @@ class customTextFieldSmall extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 60,
-      width: MediaQuery.of(context).size.width /2,
+      width: MediaQuery.of(context).size.width /2 -10,
       child: Padding(
         padding: const EdgeInsets.all(10.0),
         child: 
