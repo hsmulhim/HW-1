@@ -1,4 +1,4 @@
-# HW-1
+
 ## Details:
 1. Implement this design in an app using Flutter.
 2. You must utilize the following widgets:
