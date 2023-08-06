@@ -3,6 +3,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:hm_1/widgets/customAppbar.dart';
 import 'package:hm_1/widgets/customCatagoryButton.dart';
+import 'package:hm_1/widgets/customLabel.dart';
+import 'package:hm_1/widgets/customSmallCard.dart';
 import 'package:hm_1/widgets/customTextField.dart';
 
 class searchScreen extends StatelessWidget {
@@ -49,7 +51,19 @@ class searchScreen extends StatelessWidget {
             CustomCatagoryButton(title: 'Breakfast', bgColor: Color(0xFF70B9BE) ,fgColor: Colors.white,onPressed: (){},textColor: Colors.white,),
             CustomCatagoryButton(title: 'Lunch', bgColor: Colors.black ,fgColor: Colors.white,textColor: Colors.black,),
             CustomCatagoryButton(title: 'Dinnir', bgColor: Colors.black,fgColor: Colors.black,textColor: Colors.black,),
-           ],)
+
+            
+           ],),
+           customLabel(firstText: "popular Recepies", secondText: "view all"),
+
+           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+             children: [
+               customSmallCard(path: 'assets/images/image-food.jpg', text: 'Salad & avocado'),
+               customSmallCard(path: 'assets/images/image-food.jpg', text: 'Salad & avocado'),
+               customSmallCard(path: 'assets/images/image-food.jpg', text: 'Salad & avocado'),
+             ],
+           ),
           ],
         ),
       ),

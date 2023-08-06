@@ -52,7 +52,8 @@ class signUpScreen extends StatelessWidget {
                         Navigator.push(context, MaterialPageRoute(builder: (context) => searchScreen()))},
                    ),
                     SizedBox(height: 20),
-                   Text("By Contunuing you agree to the \n terms of service & privicy policy", textAlign: TextAlign.center,style: 
+                   Text("By Contunuing you agree to the \n terms of service & privicy policy", 
+                   textAlign: TextAlign.center,style: 
                       TextStyle(fontWeight: FontWeight.normal,fontSize: 16)),
         
         ],),
