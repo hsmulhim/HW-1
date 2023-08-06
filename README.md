@@ -17,9 +17,9 @@ and these are the login-signup screens
 
 and this is the search and explore screen with the filter option to 
 help the user optmize the result
-\n
+
 the Curved Navigation Bar will be used for future new screens in the application
-\n
+
 
 <img width="345" alt="Screen Shot 2023-08-06 at 6 22 25 AM" src="https://github.com/hsmulhim/HW-1/assets/114561921/b42c9824-7952-4bc6-8dc3-88e5628585c7">
 <img width="345" alt="Screen Shot 2023-08-06 at 6 22 33 AM" src="https://github.com/hsmulhim/HW-1/assets/114561921/b1b54608-32da-4b81-a4fd-47b1f2e47318">
