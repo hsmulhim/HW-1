@@ -1,13 +1,12 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:hm_1/widgets/customAppbar.dart';
+import 'package:hm_1/widgets/customButtomSheet.dart';
 import 'package:hm_1/widgets/customCatagoryButton.dart';
 import 'package:hm_1/widgets/customLabel.dart';
 import 'package:hm_1/widgets/customLargeCard.dart';
 import 'package:hm_1/widgets/customSmallCard.dart';
-import 'package:hm_1/widgets/customTextField.dart';
+import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 class searchScreen extends StatefulWidget {
    searchScreen({super.key});
@@ -77,7 +76,23 @@ final items = const [
           
           height: 50,
           width: 50,
-          child: IconButton(onPressed: (){}, icon: Icon(Icons.filter_list) ,color:Colors.white )
+          child: IconButton(onPressed: (){
+            showModalBottomSheet(
+              shape: RoundedRectangleBorder(
+                borderRadius:BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20))),
+      context: context,
+       builder: (BuildContext context){
+        return Container(
+          decoration: BoxDecoration(color: Colors.white,
+          ),
+          height: 500,
+          width: MediaQuery.of(context).size.width ,
+          child:ButtomSheet() ,
+        );
+       }
+       );
+
+          }, icon: Icon(Icons.filter_list) ,color:Colors.white )
           ),
               ],
              ),
