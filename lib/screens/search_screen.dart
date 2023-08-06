@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:hm_1/widgets/customAppbar.dart';
+import 'package:hm_1/widgets/customCatagoryButton.dart';
 import 'package:hm_1/widgets/customTextField.dart';
 
 class searchScreen extends StatelessWidget {
@@ -41,7 +42,14 @@ class searchScreen extends StatelessWidget {
         child: IconButton(onPressed: (){}, icon: Icon(Icons.filter_list) ,color:Colors.white )
         ),
             ],
-           )
+           ),
+           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+            CustomCatagoryButton(title: 'Breakfast', bgColor: Color(0xFF70B9BE) ,fgColor: Colors.white,onPressed: (){},textColor: Colors.white,),
+            CustomCatagoryButton(title: 'Lunch', bgColor: Colors.black ,fgColor: Colors.white,textColor: Colors.black,),
+            CustomCatagoryButton(title: 'Dinnir', bgColor: Colors.black,fgColor: Colors.black,textColor: Colors.black,),
+           ],)
           ],
         ),
       ),
