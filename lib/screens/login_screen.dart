@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hm_1/screens/home_screen.dart';
 import 'package:hm_1/screens/search_screen.dart';
 import 'package:hm_1/screens/signup_screen.dart';
 import 'package:hm_1/widgets/customAppbar.dart';
@@ -8,7 +7,7 @@ import 'package:hm_1/widgets/customTextField.dart';
 
 
 class loginScreen extends StatelessWidget {
-   loginScreen({super.key});
+   const loginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,13 +19,13 @@ class loginScreen extends StatelessWidget {
         child: Column(
 
           children: [
-           customTextField(labe: 'Email Adress', hint: 'Enter Your Email Here',
+           const customTextField(labe: 'Email Adress', hint: 'Enter Your Email Here',
            pfIcon: Icon(Icons.email_rounded),),
             
-           customTextField(labe: 'Password', hint: 'Enter Your Password Here',
+           const customTextField(labe: 'Password', hint: 'Enter Your Password Here',
            pfIcon: Icon(Icons.lock_outline),sfIcon: Icon(Icons.visibility),),
 
-           SizedBox(height: 18,),
+           const SizedBox(height: 18,),
 
            CustomButtonElevated(bgColor: Colors.black,fgColor: Colors.white,title: 'Login',
                      onPressed: () => {
@@ -34,25 +33,25 @@ class loginScreen extends StatelessWidget {
                      },
                  ),
 
-                 SizedBox(height: 25,),
+                 const SizedBox(height: 25,),
 
-                 Text("Forgot Password?", style: 
+                 const Text("Forgot Password?", style: 
                     TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
 
-                  Spacer(flex: 8,),
+                  const Spacer(flex: 8,),
 
-                    Text("or create new account", style: 
+                    const Text("or create new account", style: 
                     TextStyle(fontSize: 13,color: Colors.grey)),
 
-                    Spacer(flex: 1,),
+                    const Spacer(flex: 1,),
 
                     CustomButtonElevated(bgColor: Colors.black,fgColor: Colors.white,
                     title: 'Sign Up',
                      onPressed: () => {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => signUpScreen()))},
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const signUpScreen()))},
                  ),
                  
-                 Spacer(flex: 1),
+                 const Spacer(flex: 1),
           ],
         ),
       ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hm_1/screens/login_screen.dart';
+
 
 class CustomButtonElevated extends StatelessWidget {
   const CustomButtonElevated({super.key, 
@@ -27,7 +27,7 @@ class CustomButtonElevated extends StatelessWidget {
                  
                   
                   ),
-                   child: Text(title,style: TextStyle(color: Colors.white,)),
+                   child: Text(title,style: const TextStyle(color: Colors.white,)),
           
                    );
   }

@@ -8,11 +8,11 @@ class customSmallCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(8),
+      padding: const EdgeInsets.all(8),
       width: 100,
           height: 120,
        decoration: BoxDecoration(
-        border: Border.all(color: Color.fromARGB(255, 203, 203, 203)),
+        border: Border.all(color: const Color.fromARGB(255, 203, 203, 203)),
         borderRadius: BorderRadius.circular(15),
        ),
         child:  Column(

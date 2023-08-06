@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
 
 class customLargeCard extends StatelessWidget {
   const customLargeCard({super.key, required this.LargImg, required this.SmallImg, required this.FirstText, required this.SecondText});
@@ -28,21 +27,21 @@ class customLargeCard extends StatelessWidget {
               
               children: [
               Text(FirstText, maxLines:1,textAlign: TextAlign.left,style: 
-        TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
-        SizedBox(height: 20,),
+        const TextStyle(fontWeight: FontWeight.bold,fontSize: 16)),
+        const SizedBox(height: 20,),
         Row(
        mainAxisAlignment: MainAxisAlignment.start,
           children: [
           ClipRRect(
           borderRadius: BorderRadius.circular(10),
               child: Image.asset(SmallImg,height: 20,width: 20,fit: BoxFit.cover,)),
-              SizedBox(width: 7,),
+              const SizedBox(width: 7,),
               Text(SecondText, maxLines:1,textAlign: TextAlign.left,style: 
-        TextStyle(fontWeight: FontWeight.bold,fontSize: 14,color: Colors.grey)),
+        const TextStyle(fontWeight: FontWeight.bold,fontSize: 14,color: Colors.grey)),
     
         ],)
              ],),
-       IconButton(onPressed: (){},color: Colors.black ,icon: Icon(Icons.arrow_forward_rounded))
+       IconButton(onPressed: (){},color: Colors.black ,icon: const Icon(Icons.arrow_forward_rounded))
       ],
       ),
     ),

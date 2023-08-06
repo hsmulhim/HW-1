@@ -25,7 +25,7 @@ class customTextFieldSmall extends StatelessWidget {
                         hintText: hint,
                         contentPadding: const EdgeInsets.all(15),
                         border: OutlineInputBorder(
-                          borderSide: BorderSide(color: Color.fromARGB(255, 170, 166, 166)),
+                          borderSide: const BorderSide(color: Color.fromARGB(255, 170, 166, 166)),
                             borderRadius: BorderRadius.circular(15))),
                     
       ),

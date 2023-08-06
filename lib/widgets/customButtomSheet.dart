@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:hm_1/widgets/customCatagoryButton.dart';
 
 class ButtomSheet extends StatelessWidget {
@@ -12,27 +10,27 @@ class ButtomSheet extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       child: Column(
         children: [
-        Text("Filter", textAlign: TextAlign.left,style: 
+        const Text("Filter", textAlign: TextAlign.left,style: 
         TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),
-        Row(children: [Text("Catagory", textAlign: TextAlign.left,style: 
+        Row(children: const [Text("Catagory", textAlign: TextAlign.left,style: 
         TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),],),
         Row(children: [
-          CustomCatagoryButton(title: 'Breakfast', bgColor: Color(0xFF70B9BE) ,fgColor: Colors.white,onPressed: (){},textColor: Colors.white,),
-          CustomCatagoryButton(title: 'Lunch', bgColor: Colors.black ,fgColor: Colors.white,textColor: Colors.black,),
-          CustomCatagoryButton(title: 'Dinnir', bgColor: Colors.black,fgColor: Colors.black,textColor: Colors.black,),
+          CustomCatagoryButton(title: 'Breakfast', bgColor: const Color(0xFF70B9BE) ,fgColor: Colors.white,onPressed: (){},textColor: Colors.white,),
+          const CustomCatagoryButton(title: 'Lunch', bgColor: Colors.black ,fgColor: Colors.white,textColor: Colors.black,),
+          const CustomCatagoryButton(title: 'Dinnir', bgColor: Colors.black,fgColor: Colors.black,textColor: Colors.black,),
         ],),
     
-         Row(children: [Text("Type", textAlign: TextAlign.left,style: 
+         Row(children: const [Text("Type", textAlign: TextAlign.left,style: 
         TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),],),
         Row(children: [
-          CustomCatagoryButton(title: 'Salad', bgColor: Colors.black ,fgColor: Colors.white,textColor: Colors.black,),
-          CustomCatagoryButton(title: 'Egg', bgColor: Color(0xFF70B9BE) ,fgColor: Colors.white,onPressed: (){},textColor: Colors.white,),
-          CustomCatagoryButton(title: 'Cakes', bgColor: Colors.black ,fgColor: Colors.white,textColor: Colors.black,),
+          const CustomCatagoryButton(title: 'Salad', bgColor: Colors.black ,fgColor: Colors.white,textColor: Colors.black,),
+          CustomCatagoryButton(title: 'Egg', bgColor: const Color(0xFF70B9BE) ,fgColor: Colors.white,onPressed: (){},textColor: Colors.white,),
+          const CustomCatagoryButton(title: 'Cakes', bgColor: Colors.black ,fgColor: Colors.white,textColor: Colors.black,),
         ],),
         Row(children: [
-          CustomCatagoryButton(title: 'Salad', bgColor: Color(0xFF70B9BE) ,fgColor: Colors.white,onPressed: (){},textColor: Colors.white,),
-          CustomCatagoryButton(title: 'Egg', bgColor: Colors.black ,fgColor: Colors.white,textColor: Colors.black,),
-          CustomCatagoryButton(title: 'Cakes', bgColor: Colors.black,fgColor: Colors.black,textColor: Colors.black,),
+          CustomCatagoryButton(title: 'Salad', bgColor: const Color(0xFF70B9BE) ,fgColor: Colors.white,onPressed: (){},textColor: Colors.white,),
+          const CustomCatagoryButton(title: 'Egg', bgColor: Colors.black ,fgColor: Colors.white,textColor: Colors.black,),
+          const CustomCatagoryButton(title: 'Cakes', bgColor: Colors.black,fgColor: Colors.black,textColor: Colors.black,),
         ],),
       ],),
     );

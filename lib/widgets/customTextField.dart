@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class customTextField extends StatelessWidget {
   const customTextField({super.key, required this.labe, required this.hint,  this.sfIcon,  this.pfIcon});
@@ -17,8 +15,8 @@ class customTextField extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(labe, 
-                       textAlign: TextAlign.left ,style:  TextStyle(fontSize: 20, color: Colors.black,)),
-           SizedBox(height: 13,),
+                       textAlign: TextAlign.left ,style:  const TextStyle(fontSize: 20, color: Colors.black,)),
+           const SizedBox(height: 13,),
           TextFormField(
             
             maxLines: 1,
@@ -32,7 +30,7 @@ class customTextField extends StatelessWidget {
                       hintText: hint,
                       contentPadding: const EdgeInsets.all(15),
                       border: OutlineInputBorder(
-                        borderSide: BorderSide(color: Color.fromARGB(255, 170, 166, 166)),
+                        borderSide: const BorderSide(color: Color.fromARGB(255, 170, 166, 166)),
                           borderRadius: BorderRadius.circular(15))),
                   
     ),

@@ -6,7 +6,6 @@ import 'package:hm_1/widgets/customCatagoryButton.dart';
 import 'package:hm_1/widgets/customLabel.dart';
 import 'package:hm_1/widgets/customLargeCard.dart';
 import 'package:hm_1/widgets/customSmallCard.dart';
-import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 class searchScreen extends StatefulWidget {
    searchScreen({super.key});
@@ -40,7 +39,7 @@ final items = const [
             index = selctedIndex;
           });
         },
-        buttonBackgroundColor: Color(0xFF70B9BE),
+        buttonBackgroundColor: const Color(0xFF70B9BE),
         height: 60,
         backgroundColor: Colors.transparent,
        
@@ -61,66 +60,64 @@ final items = const [
               child: TextFormField(
                 maxLines: 1,
                       decoration: InputDecoration(
-                        prefixIcon:Icon(Icons.search) ,
+                        prefixIcon:const Icon(Icons.search) ,
                         prefixIconColor: Colors.black,
                           hintText: 'search',
                           contentPadding: const EdgeInsets.all(15),
                           border: OutlineInputBorder(
-                            borderSide: BorderSide(color: Color.fromARGB(255, 170, 166, 166)),
+                            borderSide: const BorderSide(color: Color.fromARGB(255, 170, 166, 166)),
                               borderRadius: BorderRadius.circular(15))),
                       
               ),
               ),
               Container(
-          decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color:Color(0xFF70B9BE)),
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color:const Color(0xFF70B9BE)),
           
           height: 50,
           width: 50,
           child: IconButton(onPressed: (){
             showModalBottomSheet(
-              shape: RoundedRectangleBorder(
-                borderRadius:BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20))),
       context: context,
        builder: (BuildContext context){
         return Container(
-          decoration: BoxDecoration(color: Colors.white,
+          decoration: const BoxDecoration(color: Colors.white,
           ),
           height: 500,
           width: MediaQuery.of(context).size.width ,
-          child:ButtomSheet() ,
+          child:const ButtomSheet() ,
         );
        }
        );
 
-          }, icon: Icon(Icons.filter_list) ,color:Colors.white )
+          }, icon: const Icon(Icons.filter_list) ,color:Colors.white )
           ),
               ],
              ),
              Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-              CustomCatagoryButton(title: 'Breakfast', bgColor: Color(0xFF70B9BE) ,fgColor: Colors.white,onPressed: (){},textColor: Colors.white,),
-              CustomCatagoryButton(title: 'Lunch', bgColor: Colors.black ,fgColor: Colors.white,textColor: Colors.black,),
-              CustomCatagoryButton(title: 'Dinnir', bgColor: Colors.black,fgColor: Colors.black,textColor: Colors.black,),
+              CustomCatagoryButton(title: 'Breakfast', bgColor: const Color(0xFF70B9BE) ,fgColor: Colors.white,onPressed: (){},textColor: Colors.white,),
+              const CustomCatagoryButton(title: 'Lunch', bgColor: Colors.black ,fgColor: Colors.white,textColor: Colors.black,),
+              const CustomCatagoryButton(title: 'Dinnir', bgColor: Colors.black,fgColor: Colors.black,textColor: Colors.black,),
         
               
              ],),
-             customLabel(firstText: "popular Recepies", secondText: "view all"),
+             const customLabel(firstText: "popular Recepies", secondText: "view all"),
         
              Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-               children: [
+               children: const [
                  customSmallCard(path: 'assets/images/image-food.jpg', text: 'Salad & avocado'),
                  customSmallCard(path: 'assets/images/image-food.jpg', text: 'Salad & avocado'),
                  customSmallCard(path: 'assets/images/image-food.jpg', text: 'Salad & avocado'),
                ],
              ),
-             customLabel(firstText: "Editor's Choice", secondText: "view all"),
+             const customLabel(firstText: "Editor's Choice", secondText: "view all"),
         
              SingleChildScrollView(
               scrollDirection: Axis.vertical,
                child: Column(
-                 children: [
+                 children: const [
                    customLargeCard(FirstText: 'Easy Home Made Recepie',SecondText: 'James spader',
                    LargImg: "assets/images/image-food.jpg",SmallImg: "assets/images/image-food.jpg",
                    ),
